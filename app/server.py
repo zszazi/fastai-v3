@@ -10,8 +10,9 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 #export_file_url = 'https://www.dropbox.com/s/sah6pni8xg6b0y8/Pneumonia_detection_Resnet_50.pkl?dl=0'
-export_file_url = 'https://drive.google.com/uc?export=download&id=10PPpMdvJl6rAnnPJLaKqkdVOcjkBYOIr'
-export_file_name = 'Pneumonia_detection_Resnet_50.pkl'
+# Get a direct download link and not a view link
+export_file_url = 'https://drive.google.com/uc?export=download&id=1B4DBCuX0wXQknUbOuTCk-D-_Hp_ERuc_'
+export_file_name = 'Pneumonia_detection_Resnet_50_3_epoch.pkl'
 
 classes = ['NORMAL', 'PNEUMONIA']
 path = Path(__file__).parent
