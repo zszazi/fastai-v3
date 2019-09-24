@@ -36,12 +36,12 @@ function analyze() {
   {
  
  
- if (result =="PNEUMONIA")
+ if (response["result"] ==="PNEUMONIA")
    {
      document.body.style.backgroundColor = "red";
    }
   
-  else 
+  else
     {
       document.body.style.backgroundColor = "green";
     }
@@ -51,3 +51,4 @@ function analyze() {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 }
+
