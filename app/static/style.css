@@ -1,10 +1,16 @@
 body {
-    background-color: #fff;
+    
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #da4453, #89216b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #da4453, #89216b);
+ 
 }
+
 
 .no-display {
     display: none;
 }
+
 
 .center {
     margin: auto;
