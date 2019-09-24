@@ -29,23 +29,16 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
+      if (response["result"] ==="PNEUMONIA") {
+        document.body.style.backgroundColor = "red";
+      }
+      else {
+        document.body.style.backgroundColor = "green";
+      }
       el("result-label").innerHTML = `Result = ${response["result"]}`;
     }
     el("analyze-button").innerHTML = "Analyze";
   };
-  {
- 
- 
- if (response["result"] ==="PNEUMONIA")
-   {
-     document.body.style.backgroundColor = "red";
-   }
-  
-  else
-    {
-      document.body.style.backgroundColor = "green";
-    }
-}
 
   var fileData = new FormData();
   fileData.append("file", uploadFiles[0]);
