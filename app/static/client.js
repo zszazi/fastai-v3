@@ -33,16 +33,10 @@ function analyze() {
     }
     el("analyze-button").innerHTML = "Analyze";
   };
-
-  var fileData = new FormData();
-  fileData.append("file", uploadFiles[0]);
-  xhr.send(fileData);
-}
-function changebg()
-{
- var b=  document.getElementById("Result")
+  {
  
- if (b =="PNEUMONIA")
+ 
+ if (result =="PNEUMONIA")
    {
      document.body.style.backgroundColor = "red";
    }
@@ -51,4 +45,9 @@ function changebg()
     {
       document.body.style.backgroundColor = "green";
     }
+}
+
+  var fileData = new FormData();
+  fileData.append("file", uploadFiles[0]);
+  xhr.send(fileData);
 }
