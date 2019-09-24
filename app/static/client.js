@@ -38,4 +38,17 @@ function analyze() {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 }
-
+function changebg()
+{
+ var b=  document.getElementById("Result")
+ 
+ if (b =="PNEUMONIA")
+   {
+     document.body.style.backgroundColor = "red";
+   }
+  
+  else 
+    {
+      document.body.style.backgroundColor = "green";
+    }
+}
